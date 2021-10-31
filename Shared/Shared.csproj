@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>BlueBank.src.Domain.Shared</RootNamespace>
+    <RootNamespace>BlueBank.Domain.Shared</RootNamespace>
   </PropertyGroup>
 
 </Project>
