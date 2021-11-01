@@ -8,10 +8,19 @@ namespace BlueBank.Domain.Shared
 {
     public abstract class Account
     {
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
         public double Balance { get; set; }
         public bool Status { get; set; }
+
+        protected Account(Guid id, double balance, bool status)
+        {
+            Id = id;
+            CreatedAt = DateTime.Now;
+            UpdatedAt = DateTime.Now;
+            Balance = balance;
+            Status = status;
+        }
     }
 }
