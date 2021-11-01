@@ -13,5 +13,14 @@ namespace BlueBank.Domain.Shared
         public DateTime UpdatedAt { get; private set; }
         public double Balance { get; set; }
         public bool Status { get; set; }
+
+        protected Account(Guid id, double balance, bool status)
+        {
+            this.id = id;
+            CreatedAt = DateTime.Now;
+            UpdatedAt = DateTime.Now;
+            Balance = balance;
+            Status = status;
+        }
     }
 }
