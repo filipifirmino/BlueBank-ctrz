@@ -11,6 +11,5 @@ namespace BlueBank.Domain.Core
     public class CC : Account 
     {
         public Client Client { get; set; }
-        public Address Address { get; set; }
     }
 }
