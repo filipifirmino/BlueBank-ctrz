@@ -14,6 +14,12 @@ namespace Data.Configs
             builder
                 .Property(x => x.ClintId)
                 .HasColumnName("ID_CLIENT");
+
+            builder
+                .HasOne(x => x.Client)
+                .WithOne(x => (CC)x.Account)
+                .OnDelete(DeleteBehavior.NoAction);
+            //Verificar se ha necessidae de especificar a FK
         }
     }
 
@@ -26,6 +32,7 @@ namespace Data.Configs
             builder
                 .Property(x => x.ClientId)
                 .HasColumnName("ID_CLIENT");
+                
         }
     }
 }
