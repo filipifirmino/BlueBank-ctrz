@@ -8,7 +8,7 @@ using BlueBank.Domain.Shared.ValueObjects;
 
 namespace BlueBank.Domain.Core
 {
-    class CP : Account
+    public class CP : Account
     {
         public CP(Guid id, double balance, bool status, Client client) : base(id, balance, status)
         {
@@ -16,5 +16,6 @@ namespace BlueBank.Domain.Core
         }
 
         public Client Client { get; private set; }
+        public Guid ClientId { get; set; }
     }
 }

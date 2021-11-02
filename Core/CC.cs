@@ -16,5 +16,6 @@ namespace BlueBank.Domain.Core
         }
 
         public Client Client { get; set; }
+        public Guid ClintId { get; set; }
     }
 }

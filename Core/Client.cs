@@ -12,5 +12,5 @@ namespace BlueBank.Domain.Core
         public string Phone { get; set; }
         public string Address { get; set; }
         public string Cpf { get; set; }
-;    }
+   }
 }
