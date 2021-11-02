@@ -10,7 +10,11 @@ namespace BlueBank.Domain.Core
 {
     class CP : Account
     {
-        public Client Client { get; set; }
-        public Address Address { get; set; }
+        public CP(Guid id, double balance, bool status, Client client) : base(id, balance, status)
+        {
+            Client = client;
+        }
+
+        public Client Client { get; private set; }
     }
 }
