@@ -32,7 +32,10 @@ namespace Data.Configs
             builder
                 .Property(x => x.ClientId)
                 .HasColumnName("ID_CLIENT");
-                
+            builder
+            .HasOne(x => x.Client)
+            .WithOne(x => (CP)x.Account)
+            .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
