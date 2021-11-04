@@ -1,11 +1,7 @@
-﻿using BlueBank.Domain.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace BlueBank.Domain.Core
+
+namespace BlueBank.Domain.Shared
 {
     public class Client
     {
@@ -15,5 +11,6 @@ namespace BlueBank.Domain.Core
         public string Cpf { get; set; }
         public Account Account { get; set; }
         public Guid AccountId { get; set; }
+        public Guid Id { get; set; }
    }
 }
