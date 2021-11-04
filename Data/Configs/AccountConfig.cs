@@ -12,7 +12,7 @@ namespace Data.Configs
             base.Configure(builder);
 
             builder
-                .Property(x => x.ClintId)
+                .Property(x => x.ClientId)
                 .HasColumnName("ID_CLIENT");
 
             builder

@@ -1,4 +1,6 @@
-﻿using BlueBank.Domain.Core;
+﻿using BlueBank.Domain.Shared;
+using Data.Configs;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
@@ -8,11 +10,19 @@ using System.Threading.Tasks;
 
 namespace BlueBank.Domain.Data.Configs
 {
-    class ClientConfig
+    class ClientConfig : ConfigClient<Client>
     {
-        internal void Configure(EntityTypeBuilder<Client> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<Client> builder)
         {
-            throw new NotImplementedException();
+            base.Configure(builder);
+
+            builder
+                .Property(x => x.AccountId)
+                .HasColumnName("ID_ACCOUNT");
+
+            builder
+                .HasOne(x => x.Account)
+                .WithOne(x => x.Client);
         }
     }
 }
