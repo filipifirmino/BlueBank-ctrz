@@ -1,4 +1,5 @@
 ﻿using BlueBank.Domain.Shared;
+using BlueBank.Domain.Shared.Entitie;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlueBank.Domain.Core
 {
-    public class Client
+    public class Client : Entity
     {
         public string Name { get; set; }
         public string Phone { get; set; }

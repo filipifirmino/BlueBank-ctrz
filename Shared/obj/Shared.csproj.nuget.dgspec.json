@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj": {}
+    "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj": {
+    "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
-        "projectName": "BlueBankAPI",
-        "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+        "projectUniqueName": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
+        "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,12 +39,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +50,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

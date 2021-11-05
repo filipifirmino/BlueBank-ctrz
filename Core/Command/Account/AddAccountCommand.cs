@@ -7,12 +7,13 @@ using BlueBank.Domain.Core;
 
 namespace BlueBank.Domain.Shared.Requests.Conta
 {
-    class AddContaC
+    public class AddAccountCommand
     {
-        public void DepositoCC(Client client, double valorDeposito)
+        public void Deposit(Client client, double depositValue)
         {
-            var idDeposito = new Guid();
-            client.Account.Balance += valorDeposito;
+            var transaction = new Transaction();
+            
+            client.Account.Balance += depositValue;
         }
 
         public void SaqueCC(Client client, double valorSaque)
