@@ -17,11 +17,11 @@ namespace BlueBank.Domain.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             new ClientConfig().Configure(modelBuilder.Entity<Client>());
-            new AccountConfig().Configure(modelBuilder.Entity<CC>());
-            new AccountCpConfig().Configure(modelBuilder.Entity<CP>());
+            //new AccountConfig().Configure(modelBuilder.Entity<CC>());
+            //new AccountCpConfig().Configure(modelBuilder.Entity<CP>());
         }
 
         public DbSet<Client> Clients { get; set; }
-        public DbSet<Account> Accounts { get; set; }
+       // public DbSet<Account> Accounts { get; set; }
     }
 }

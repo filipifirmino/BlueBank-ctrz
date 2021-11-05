@@ -20,9 +20,9 @@ namespace BlueBank.Domain.Data.Configs
                 .Property(x => x.AccountId)
                 .HasColumnName("ID_ACCOUNT");
 
-            builder
-                .HasOne(x => x.Account)
-                .WithOne(x => x.Client);
+           // builder
+           //     .HasOne(x => x.Account)
+           //     .WithOne(x => x.Client);
         }
     }
 }
