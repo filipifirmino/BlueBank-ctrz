@@ -1,4 +1,4 @@
-﻿using BlueBank.Domain.Shared;
+﻿using BlueBank.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

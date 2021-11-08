@@ -4,7 +4,7 @@ using BlueBank.Domain.Shared.ValueObjects;
 using System;
 
 
-namespace BlueBank.Domain.Shared
+namespace BlueBank.Domain.Core
 {
     public class Client : Entity
     {
@@ -14,6 +14,5 @@ namespace BlueBank.Domain.Shared
         public string Cpf { get; set; }
         public Account Account { get; set; }
         public Guid AccountId { get; set; }
-        public Guid Id { get; set; }
     }
 }

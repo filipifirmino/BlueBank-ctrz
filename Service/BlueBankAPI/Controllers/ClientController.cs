@@ -1,3 +1,4 @@
+using BlueBank.Domain.Core;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         public IActionResult GetClient([FromRoute] Guid id)
         {
             // metodo para acessar o BD e obter a lista de clientes
-            return Ok(new Client); //formatar caso não esteja;          
+            return Ok(new Client()); //formatar caso não esteja;          
         }
 
         [HttpDelete("{Id}")]

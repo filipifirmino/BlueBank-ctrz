@@ -1,4 +1,5 @@
-﻿using BlueBank.Domain.Data.Configs;
+﻿using BlueBank.Domain.Core;
+using BlueBank.Domain.Data.Configs;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlueBank.Domain.Data

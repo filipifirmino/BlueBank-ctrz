@@ -1,4 +1,5 @@
-﻿using Data.Configs;
+﻿using Bluebank.Data.Configs;
+using BlueBank.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

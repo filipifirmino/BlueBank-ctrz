@@ -1,10 +1,10 @@
 
-using BlueBank.Domain.Core;
+using BlueBank.Domain.Shared;
 using BlueBank.Domain.Shared.Entitie;
 using System;
 using System.Collections.Generic;
 
-namespace BlueBank.Domain.Shared
+namespace BlueBank.Domain.Core
 {
     public class Account : Entity
     {

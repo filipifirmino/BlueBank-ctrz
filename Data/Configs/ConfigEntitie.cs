@@ -1,8 +1,9 @@
-﻿using BlueBank.Domain.Shared;
+﻿using BlueBank.Domain.Core;
+using BlueBank.Domain.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Data.Configs
+namespace Bluebank.Data.Configs
 {
     abstract class ConfigEntitie<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Account
     {
