@@ -27,11 +27,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\u008143\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\u007858\\.nuget\\packages\\": {}
+>>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Core\\Core.csproj",
       "projectName": "Core",
       "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Core\\Core.csproj",
@@ -40,6 +45,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj",
+      "projectName": "Core",
+      "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +68,13 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj": {
               "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj"
+=======
+            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj"
+>>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5
             }
           }
         }

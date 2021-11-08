@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Data
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\u008143\Desktop\BlueBank\BlueBank-ctrz\Data\
+=======
+build_property.ProjectDir = C:\Users\u007858\source\repos\BlueBank-ctrz\Data\
+>>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5

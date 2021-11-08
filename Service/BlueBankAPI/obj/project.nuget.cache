@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "qw1cIU4fd4sludXiC8pSEfecjmOwPHchy1DHPBlnowm21h3f/aGuy8iDq+VLCJmzTYx/qRUaA/PfeQ7cRxwxlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+=======
+  "dgSpecHash": "f3IF6+xkELKcF264uHQff4RoG2azINgFpvHXdkD796ZOBno2WJw4PtngDKuYiXFkrFjrarkBWFaQNPW29c9JqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\BlueBankAPI\\BlueBankAPI.csproj",
+>>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5
   "expectedPackageFiles": [
     "C:\\Users\\u008143\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\u008143\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
