@@ -2,11 +2,6 @@
 using Data.Configs;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlueBank.Domain.Data.Configs
 {
@@ -20,9 +15,9 @@ namespace BlueBank.Domain.Data.Configs
                 .Property(x => x.AccountId)
                 .HasColumnName("ID_ACCOUNT");
 
-           // builder
-           //     .HasOne(x => x.Account)
-           //     .WithOne(x => x.Client);
+            // builder
+            //     .HasOne(x => x.Account)
+            //     .WithOne(x => x.Client);
         }
     }
 }

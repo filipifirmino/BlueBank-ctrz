@@ -1,10 +1,7 @@
 ﻿using BlueBank.Domain.Shared;
 using BlueBank.Domain.Shared.Entitie;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BlueBank.Domain.Core
 {
@@ -16,4 +13,5 @@ namespace BlueBank.Domain.Core
         public Guid AccountId { get; set; }
 
     }
+
 }
