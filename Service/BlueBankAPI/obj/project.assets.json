@@ -6046,35 +6046,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\u008143\\.nuget\\packages\\": {}
+    "C:\\Users\\u007858\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
-      "projectName": "BlueBankAPI",
-      "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
-      "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\BlueBankAPI\\BlueBankAPI.csproj",
->>>>>>> DomainStructure
       "projectName": "BlueBankAPI",
       "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
       "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-<<<<<<< HEAD
       "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
-=======
-      "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\BlueBankAPI\\obj\\",
->>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5
->>>>>>> DomainStructure
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6140,5 +6124,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj",
-        "projectName": "Shared",
-        "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank\\BlueBank-ctrz\\Shared\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
     "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {}
   },
   "projects": {
@@ -31,7 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1f480b5891663a1204e4e86bd1880cfcb10296d5
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
