@@ -18,6 +18,7 @@ namespace BlueBank.Domain.Core.Command.History
         }
 
         public Transaction Add(AddHistoryRequest request)
+            // Desconstruir requeste para salvar no banco.
         {
             var History = new Transaction(); // Implementar variantes do contrutor
 

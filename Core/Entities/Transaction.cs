@@ -16,6 +16,7 @@ namespace BlueBank.Domain.Core
         {
             throw new NotImplementedException();
         }
+       
     }
 
 }
