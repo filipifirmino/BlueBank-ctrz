@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9zRdRQgEsQ69QhtdCQYKV5GM2o7qrNgkhfXzFvoCP4kc81WtMxGThTSDtTyAPEWPqeKhuQTMqi1fnegfe8v3ew==",
+  "dgSpecHash": "EBbZpuuOjeU6jDbsmXYPRLvY6I1XjeDqJaxrOPY3UqoKTh9KD2xPaRbnelfr0lNwi3z4CP5SuLv8dkYjhoAskQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\u008143\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512"
+  ],
   "logs": []
 }

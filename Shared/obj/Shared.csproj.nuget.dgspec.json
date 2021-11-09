@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {}
+    "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
+    "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
