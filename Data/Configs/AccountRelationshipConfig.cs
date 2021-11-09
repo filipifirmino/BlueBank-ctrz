@@ -16,10 +16,10 @@ namespace BlueBanck.Data.Configs
                 .Property(x => x.ClientId)
                 .HasColumnName("ID_CLIENT");
 
-            builder
-                .HasOne(x => x.Client)
-                .WithOne(x => x.Account)
-                .OnDelete(DeleteBehavior.NoAction);
+           //builder
+           //    .HasOne(x => x.Client)
+           //    .WithOne(x => x.Account)
+           //    .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

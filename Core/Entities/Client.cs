@@ -2,7 +2,7 @@
 using BlueBank.Domain.Shared.Entitie;
 using BlueBank.Domain.Shared.ValueObjects;
 using System;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BlueBank.Domain.Core
 {
@@ -12,7 +12,8 @@ namespace BlueBank.Domain.Core
         public string Phone { get; set; }
         public Address Address { get; set; }
         public string Cpf { get; set; }
-        public Account Account { get; set; }
+        [NotMapped]
+        //public Account Account { get; set; }
         public Guid AccountId { get; set; }
     }
 }

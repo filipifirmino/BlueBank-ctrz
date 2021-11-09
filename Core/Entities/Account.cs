@@ -4,6 +4,7 @@ using BlueBank.Domain.Shared.Entitie;
 using System;
 using System.Collections.Generic;
 
+
 namespace BlueBank.Domain.Core
 {
     public class Account : Entity

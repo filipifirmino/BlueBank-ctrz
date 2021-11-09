@@ -15,11 +15,11 @@ namespace BlueBank.Domain.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            new ClientRelationshipConfig().Configure(modelBuilder.Entity<Client>());
-            new AccountRelationshipConfig().Configure(modelBuilder.Entity<Account>());
+           new ClientRelationshipConfig().Configure(modelBuilder.Entity<Client>());
+          // new AccountRelationshipConfig().Configure(modelBuilder.Entity<Account>());
         }
 
         public DbSet<Client> Clients { get; set; }
-        // public DbSet<Account> Accounts { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }
