@@ -3,7 +3,6 @@ using BlueBank.Domain.Shared.Entitie;
 using BlueBank.Domain.Shared.ValueObjects;
 using System;
 
-
 namespace BlueBank.Domain.Core
 {
     public class Client : Entity
@@ -15,4 +14,5 @@ namespace BlueBank.Domain.Core
         public Account Account { get; set; }
         public Guid AccountId { get; set; }
     }
+   
 }
