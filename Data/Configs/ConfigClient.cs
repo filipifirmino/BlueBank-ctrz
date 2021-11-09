@@ -26,9 +26,9 @@ namespace Data.Configs
                 .Property(x => x.Cpf)
                 .HasColumnName("ST_CPF");
 
-            //builder
-            //    .Property(x => x.Account)
-            //    .HasColumnName("DT_ACCOUNT");
+            builder
+               .Property(x => x.Account)
+               .HasColumnName("DT_ACCOUNT");
 
             builder
                 .Property(x => x.AccountId)

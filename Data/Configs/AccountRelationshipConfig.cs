@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BlueBanck.Data.Configs
 {
-    class AccountConfig : ConfigEntitie<Account>
+    class AccountRelationshipConfig : ConfigAccount<Account>
     {
         public override void Configure(EntityTypeBuilder<Account> builder)
         {

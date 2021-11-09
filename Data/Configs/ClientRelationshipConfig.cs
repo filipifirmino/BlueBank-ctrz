@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BlueBank.Domain.Data.Configs
 {
-    class ClientConfig : ConfigClient<Client>
+    class ClientRelationshipConfig : ConfigClient<Client>
     {
         public override void Configure(EntityTypeBuilder<Client> builder)
         {
@@ -15,9 +15,9 @@ namespace BlueBank.Domain.Data.Configs
                 .Property(x => x.AccountId)
                 .HasColumnName("ID_ACCOUNT");
 
-            // builder
-            //     .HasOne(x => x.Account)
-            //     .WithOne(x => x.Client);
+             builder
+                .HasOne(x => x.Account)
+                .WithOne(x => x.Client);
         }
     }
 }
