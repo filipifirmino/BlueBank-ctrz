@@ -9,4 +9,9 @@
     <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
 </Project>

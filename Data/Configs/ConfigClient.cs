@@ -1,11 +1,6 @@
-﻿using BlueBank.Domain.Shared;
+﻿using BlueBank.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Data.Configs
 {
@@ -31,9 +26,9 @@ namespace Data.Configs
                 .Property(x => x.Cpf)
                 .HasColumnName("ST_CPF");
 
-            //builder
-            //    .Property(x => x.Account)
-            //    .HasColumnName("DT_ACCOUNT");
+            builder
+               .Property(x => x.Account)
+               .HasColumnName("DT_ACCOUNT");
 
             builder
                 .Property(x => x.AccountId)

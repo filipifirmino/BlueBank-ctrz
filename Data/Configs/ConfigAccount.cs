@@ -1,15 +1,10 @@
-﻿using BlueBank.Domain.Shared;
+﻿using BlueBank.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Data.Configs
+namespace Bluebank.Data.Configs
 {
-    abstract class ConfigEntitie<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Account
+    class ConfigAccount<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Account
     {
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
         {
@@ -34,6 +29,10 @@ namespace Data.Configs
             builder
                 .Property(x => x.Status)
                 .HasColumnName("ST_STATUS");
+
+            builder
+                .Property(x => x.Type)
+                .HasColumnName("ST_TYPE");
 
         }
     }

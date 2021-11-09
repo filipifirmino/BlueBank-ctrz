@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BlueBank.Domain.Core;
+﻿using BlueBank.Domain.Core;
+using System;
 
 namespace BlueBank.Domain.Shared.Requests.Conta
 {
@@ -12,7 +8,7 @@ namespace BlueBank.Domain.Shared.Requests.Conta
         public void Deposit(Client client, double depositValue)
         {
             var transaction = new Transaction();
-            
+
             client.Account.Balance += depositValue;
         }
 
@@ -35,7 +31,7 @@ namespace BlueBank.Domain.Shared.Requests.Conta
         public void TransferenciaCC(Client client, double valorTransferencia, Client clientDestino)
         {
             var idTransferencia = new Guid();
-            
+
             try
             {
                 if (client.Account.Balance >= valorTransferencia)

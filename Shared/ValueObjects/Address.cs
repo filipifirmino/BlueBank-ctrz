@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BlueBank.Domain.Shared.ValueObjects
+﻿namespace BlueBank.Domain.Shared.ValueObjects
 {
     public class Address : ValueObject
-     {
+    {
         public string Street { get; set; }
         public string Phone { get; set; }
         public string State { get; set; }

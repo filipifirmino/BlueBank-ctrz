@@ -1,16 +1,11 @@
-﻿using BlueBank.Domain.Shared;
+﻿using BlueBank.Domain.Core;
 using Data.Configs;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlueBank.Domain.Data.Configs
 {
-    class ClientConfig : ConfigClient<Client>
+    class ClientRelationshipConfig : ConfigClient<Client>
     {
         public override void Configure(EntityTypeBuilder<Client> builder)
         {
@@ -20,9 +15,9 @@ namespace BlueBank.Domain.Data.Configs
                 .Property(x => x.AccountId)
                 .HasColumnName("ID_ACCOUNT");
 
-           // builder
-           //     .HasOne(x => x.Account)
-           //     .WithOne(x => x.Client);
+            // builder
+               // .HasOne(x => x.Account)
+               // .WithOne(x => x.Client);
         }
     }
 }

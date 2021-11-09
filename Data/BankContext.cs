@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using BlueBanck.Data.Configs;
 using BlueBank.Domain.Core;
-using System;
-using BlueBank.Domain.Shared;
 using BlueBank.Domain.Data.Configs;
-using Data.Configs;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlueBank.Domain.Data
 {
@@ -16,12 +15,11 @@ namespace BlueBank.Domain.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            new ClientConfig().Configure(modelBuilder.Entity<Client>());
-            //new AccountConfig().Configure(modelBuilder.Entity<CC>());
-            //new AccountCpConfig().Configure(modelBuilder.Entity<CP>());
+           new ClientRelationshipConfig().Configure(modelBuilder.Entity<Client>());
+          // new AccountRelationshipConfig().Configure(modelBuilder.Entity<Account>());
         }
 
         public DbSet<Client> Clients { get; set; }
-       // public DbSet<Account> Accounts { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }
