@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Queries\" />
+    <Folder Include="Queries\Account\" />
+    <Folder Include="Queries\Client\" />
   </ItemGroup>
 
 </Project>
