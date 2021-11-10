@@ -11,16 +11,8 @@ namespace BlueBank.Infra.Data.Configs
             base.Configure(builder);
            
             builder
-                .Property(x => x.CreatedAt)
-                .HasColumnName("DT_CREATED");
-
-            builder
-                .Property(x => x.UpdatedAt)
-                .HasColumnName("DT_UPDATED");
-
-            builder
                 .Property(x => x.Balance)
-                .HasColumnName("ST_BALANCE");
+                .HasColumnName("VL_BALANCE");
 
             builder
                 .Property(x => x.Status)

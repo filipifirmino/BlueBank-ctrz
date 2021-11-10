@@ -14,19 +14,19 @@ namespace BlueBank.Infra.Data.Configs
 
             builder
                 .Property(x => x.Name)
-                .HasColumnName("ST_NAME");
+                .HasColumnName("NM_NAME");
 
             builder
                 .Property(x => x.Phone)
-                .HasColumnName("ST_PHONE");
+                .HasColumnName("DS_PHONE");
 
             builder
                 .Property(x => x.Cpf)
-                .HasColumnName("ST_CPF");
+                .HasColumnName("DS_CPF");
             
             builder
                .Property(x => x.Address)
-               .HasColumnName("DT_ADDRESS")
+               .HasColumnName("DS_ADDRESS")
                .HasConversion(
                     address => address.FullAddress,
                     valueOfDataBase => new Address(valueOfDataBase)
