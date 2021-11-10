@@ -2,18 +2,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Bluebank.Data.Configs
+namespace BlueBank.Infra.Data.Configs
 {
-    class ConfigAccount<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Account
+    class AccountConfig : EntityConfig<Account> 
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public override void Configure(EntityTypeBuilder<Account> builder)
         {
-            builder.HasKey(x => x.Id);
-
-            builder
-                .Property(x => x.Id)
-                .HasColumnName("ID");
-
+            base.Configure(builder);
+           
             builder
                 .Property(x => x.CreatedAt)
                 .HasColumnName("DT_CREATED");
@@ -34,6 +30,8 @@ namespace Bluebank.Data.Configs
                 .Property(x => x.Type)
                 .HasColumnName("ST_TYPE");
 
+
         }
+
     }
 }
