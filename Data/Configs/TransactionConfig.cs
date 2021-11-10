@@ -1,4 +1,4 @@
-﻿using BlueBank.Domain.Core;
+using BlueBank.Domain.Core;
 using BlueBank.Infra.Data.Configs;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -27,7 +27,6 @@ namespace BlueBank.Infra.Data.Configs
             builder
                 .Property(x => x.AccountId)
                 .HasColumnName("ID_ACCOUNT");
-
         }
     }
 }
