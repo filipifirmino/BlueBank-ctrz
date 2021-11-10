@@ -1,4 +1,4 @@
-﻿using BlueBank.Domain.Core;
+using BlueBank.Domain.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -21,9 +21,6 @@ namespace BlueBank.Infra.Data.Configs
             builder
                 .Property(x => x.Type)
                 .HasColumnName("ST_TYPE");
-
-
         }
-
     }
 }
