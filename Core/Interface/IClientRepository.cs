@@ -14,6 +14,10 @@ namespace BlueBank.Domain.Core.Interface
 
         public void Add(Client client);
 
+        public void Remove(Client client);
+
+        public Client Update(Client client);
+
         public void Save();
 
     }

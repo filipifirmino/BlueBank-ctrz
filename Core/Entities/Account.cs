@@ -9,8 +9,7 @@ namespace BlueBank.Domain.Core
 {
     public class Account : Entity
     {
-        public DateTime CreatedAt { get; private set; }
-        public DateTime UpdatedAt { get; private set; }
+   
         public List<Transaction> Transactions { get; set; }
         public double Balance { get; set; }
         public bool Status { get; set; }
@@ -18,12 +17,14 @@ namespace BlueBank.Domain.Core
         public Client Client { get; set; }
         public Guid ClientId { get; set; }
 
-        public Account()
+        public Account(AccountType type, Client client)
         {
-            CreatedAt = DateTime.Now;
-            UpdatedAt = DateTime.Now;
             Transactions = new List<Transaction>();
             Status = true;
+            Balance = 0.0;
+            Type = type;
+            Client = client;
+            ClientId = client.Id;
         }
     }
 }

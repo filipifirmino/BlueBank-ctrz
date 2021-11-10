@@ -28,7 +28,7 @@ namespace BlueBank.Infra.Data.Repositorys
             return _bankContext.Transactions.AsNoTracking().Single(x => x.Id == Id).ToList();
         }
 
-        public void save()
+        public void Save()
         {
             _bankContext.SaveChanges();
         }

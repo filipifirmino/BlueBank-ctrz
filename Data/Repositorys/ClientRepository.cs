@@ -34,10 +34,23 @@ namespace Data.Repositorys
             _bankContext.Add(client);
         }
 
+        public void Remove(Client client)
+        {
+            _bankContext.Remove(client);
+        }
+
         public void Save()
         {
             _bankContext.SaveChanges();
         }
 
+        public Client Update(Client client)
+        {
+            client.UpdatedAt =  DateTime.Now;
+
+            _bankContext.Update(client);
+            
+            return client;
+        }
     }
 }
