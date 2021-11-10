@@ -18,6 +18,8 @@ namespace BlueBank.Domain.Data
         {
            new ClientConfig().Configure(modelBuilder.Entity<Client>());
            new AccountConfig().Configure(modelBuilder.Entity<Account>());
+           new TransactionConfig().Configure(modelBuilder.Entity<Transaction>());
+
         }
 
         public DbSet<Client> Clients { get; set; }
