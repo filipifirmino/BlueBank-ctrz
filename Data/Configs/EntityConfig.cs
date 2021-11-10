@@ -1,4 +1,4 @@
-﻿using BlueBank.Domain.Shared.Entitie;
+using BlueBank.Domain.Shared.Entitie;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -22,9 +22,6 @@ namespace BlueBank.Infra.Data.Configs
             builder
                 .Property(x => x.UpdatedAt)
                 .HasColumnName("DT_UPDATED");
-
         }
-
-
     }
 }
