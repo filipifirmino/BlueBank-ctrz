@@ -1,4 +1,10 @@
 using BlueBank.Domain.Core;
+using BlueBank.Domain.Core.Command.Client;
+using BlueBank.Domain.Core.Interface;
+using BlueBank.Domain.Core.Queries.Client;
+using BlueBank.Domain.Core.Queries.Clients;
+using BlueBank.Domain.Shared.Requests;
+using BlueBank.Domain.Core.Requestes;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,45 +15,56 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
     [Route("[controller]")]
     public class ClientController : ControllerBase
     {
+        private readonly IClientRepository _clientRepository;
+
+        public ClientController(IClientRepository repository)
+        {
+            _clientRepository = repository;
+        }
+
         [HttpGet]
         public IActionResult GetAll()
         {
-            // metodo para acessar o BD e obter a lista de clientes
-            return Ok(new List<Client> { }); //formatar caso não esteja;          
+            var Handler = new GetAllClietQueryHandler(_clientRepository);
+            var result = Handler.GetAllClients();
+
+            return Ok(result);
         }
 
         [HttpGet("{Id}")]
         public IActionResult GetClient([FromRoute] Guid id)
         {
-            // metodo para acessar o BD e obter a lista de clientes
-            return Ok(new Client()); //formatar caso não esteja;          
+            var Handler = new GetByIdClientQueryHandler(_clientRepository);
+            var result = Handler.GetClientById(id);
+
+            return Ok(result);
         }
 
-        [HttpDelete("{Id}")]
-        public IActionResult DeleteClient([FromRoute] Guid id)
+        [HttpDelete]
+        public IActionResult DeleteClient([FromBody] Client client)
         {
-            // metodo para acessar o BD e deletar um cliente
-            //Não retorna informação
-            return Ok(); // caso de sucesso
-                         // return BadRequest(); caso de erro
+            var Handler = new DeletClientCommandHandler(_clientRepository);
+            Handler.Delete(client);
+
+            return Ok();
         }
 
         [HttpPost]
-        public IActionResult AddClient([FromBody] Client client)
+        public IActionResult AddClient([FromBody] AddClientRequest request)
         {
-            // metodo para acessar o BD e adicionar um cliente
-            //Não retorna nada
-            return Ok(); // caso de sucesso
-                         // return BadRequest(); caso de erro
+            var Handler = new AddClientCommandHandler(_clientRepository);
+            var result = Handler.Add(request);
+
+            return Ok(result);
         }
 
         [HttpPut]
-        public IActionResult UpdateClient([FromBody] Client client)
+        public IActionResult UpdateClient([FromBody] UpdateClientRequest client)
         {
-            // metodo para acessar o BD e adicionar um cliente
-            //Não retorna nada
-            return Ok(); // caso de sucesso
-                         // return BadRequest(); caso de erro
+            var Handler = new UpdateClientCommandHandler(_clientRepository);
+            var result = Handler.Update(client);
+
+            return Ok(result);
         }
     }
 }

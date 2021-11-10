@@ -23,7 +23,7 @@ namespace BlueBank.Domain.Core.Command.History
             var History = new Transaction(); // Implementar variantes do contrutor
 
             _historyRepository.Add(History);
-            _historyRepository.save();
+            _historyRepository.Save();
 
             return History;
 

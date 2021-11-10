@@ -9,7 +9,7 @@ namespace BlueBank.Domain.Core.Interface
     public interface IHistoryRepository
     {
         List<Transaction> GetAllByAccountId(Guid Id);
-        void save();
+        void Save();
         void Add(Transaction history);
         //void save();
     }
