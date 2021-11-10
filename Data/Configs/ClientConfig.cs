@@ -9,8 +9,7 @@ namespace BlueBank.Infra.Data.Configs
     {
         public override void Configure(EntityTypeBuilder<Client> builder)
         {
-            base.Configure(builder);
-                     
+            base.Configure(builder);   
 
             builder
                 .Property(x => x.Name)
