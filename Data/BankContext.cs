@@ -1,6 +1,3 @@
-﻿
-
-
 using BlueBank.Domain.Core;
 using BlueBank.Infra.Data.Configs;
 using Microsoft.EntityFrameworkCore;
