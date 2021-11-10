@@ -1,7 +1,7 @@
 ﻿using BlueBank.Domain.Shared;
 using BlueBank.Domain.Shared.Entitie;
 using System;
-
+using System.Collections.Generic;
 
 namespace BlueBank.Domain.Core
 {
@@ -12,6 +12,11 @@ namespace BlueBank.Domain.Core
         public Client DestinyClient { get; set; }
         public Guid AccountId { get; set; }
 
+        public List<Transaction> ToList()
+        {
+            throw new NotImplementedException();
+        }
+       
     }
 
 }
