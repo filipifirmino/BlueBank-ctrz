@@ -6039,6 +6039,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Core >= 1.0.0",
       "Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.11",
@@ -6072,6 +6073,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj"
+            },
             "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj"
             }
