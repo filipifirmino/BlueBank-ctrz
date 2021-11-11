@@ -16,7 +16,6 @@ namespace BlueBank.Domain.Core.Command.History
         {
             _historyRepository = repository;
         }
-
         public Transaction Add(AddHistoryRequest request)
             // Desconstruir requeste para salvar no banco.
         {
@@ -26,7 +25,6 @@ namespace BlueBank.Domain.Core.Command.History
             _historyRepository.Save();
 
             return History;
-
         }
     }
 }

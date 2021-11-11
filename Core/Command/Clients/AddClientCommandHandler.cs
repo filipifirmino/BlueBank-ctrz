@@ -7,10 +7,12 @@ namespace BlueBank.Domain.Shared.Requests
     public class AddClientCommandHandler
     {
         private readonly IClientRepository _clientRepository;
+        private readonly IAccountRepository _accountRepository;
 
-        public AddClientCommandHandler(IClientRepository repository)
+        public AddClientCommandHandler(IClientRepository repository, IAccountRepository accountRepository)
         {
             _clientRepository = repository;
+            _accountRepository = accountRepository;
         }
 
         public Client Add( AddClientRequest requeste)
@@ -21,8 +23,10 @@ namespace BlueBank.Domain.Shared.Requests
             Client.AccountId = Account.Id;
 
             _clientRepository.Add(Client);
+            _accountRepository.Add(Account);
             _clientRepository.Save();
-
+            _accountRepository.Save();
+            
             return Client;
         }
     }
