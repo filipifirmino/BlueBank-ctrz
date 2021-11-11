@@ -26,5 +26,10 @@ namespace BlueBank.Domain.Core
             Client = client;
             ClientId = client.Id;
         }
+
+        public Account()
+        {
+
+        }
     }
 }

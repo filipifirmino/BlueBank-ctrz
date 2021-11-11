@@ -6053,11 +6053,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+      "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
       "projectName": "BlueBankAPI",
-      "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+      "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
       "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
+      "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6074,11 +6074,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj"
+            "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj"
             },
-            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj"
+            "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj"
             }
           }
         }
@@ -6126,7 +6126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
