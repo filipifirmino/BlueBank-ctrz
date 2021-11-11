@@ -11,6 +11,6 @@ namespace BlueBank.Domain.Core.Interface
         List<Transaction> GetAllByAccountId(Guid Id);
         void Save();
         void Add(Transaction history);
-        //void save();
+        
     }
 }
