@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlueBankAPI.Migrations
 {
     [DbContext(typeof(BankContext))]
-    [Migration("20211109183453_Init")]
+    [Migration("20211111140404_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,7 +30,7 @@ namespace BlueBankAPI.Migrations
 
                     b.Property<double>("Balance")
                         .HasColumnType("float")
-                        .HasColumnName("ST_BALANCE");
+                        .HasColumnName("VL_BALANCE");
 
                     b.Property<Guid>("ClientId")
                         .HasColumnType("uniqueidentifier");
@@ -72,19 +72,27 @@ namespace BlueBankAPI.Migrations
 
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("DT_ADDRESS");
+                        .HasColumnName("DS_ADDRESS");
 
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ST_CPF");
+                        .HasColumnName("DS_CPF");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DT_CREATED");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ST_NAME");
+                        .HasColumnName("NM_NAME");
 
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("ST_PHONE");
+                        .HasColumnName("DS_PHONE");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DT_UPDATED");
 
                     b.HasKey("Id");
 
@@ -95,27 +103,34 @@ namespace BlueBankAPI.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("ID");
 
                     b.Property<Guid>("AccountId")
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("ID_ACCOUNT");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DT_CREATED");
 
-                    b.Property<Guid?>("DestinyClientId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<Guid>("DestinyClientId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("ID_CLIENT");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DT_UPDATED");
 
                     b.Property<double>("Value")
-                        .HasColumnType("float");
+                        .HasColumnType("float")
+                        .HasColumnName("VL_VALUE");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AccountId");
 
-                    b.HasIndex("DestinyClientId");
-
-                    b.ToTable("Transaction");
+                    b.ToTable("Transactions");
                 });
 
             modelBuilder.Entity("BlueBank.Domain.Core.Account", b =>
@@ -136,12 +151,6 @@ namespace BlueBankAPI.Migrations
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("BlueBank.Domain.Core.Client", "DestinyClient")
-                        .WithMany()
-                        .HasForeignKey("DestinyClientId");
-
-                    b.Navigation("DestinyClient");
                 });
 
             modelBuilder.Entity("BlueBank.Domain.Core.Account", b =>

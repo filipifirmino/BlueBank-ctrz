@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "WoCV4ub8y2neq2Py86vaCA2oFNTU1oPfO87orQGq82Ifdgn1z4pociec6sh8rStaOlkXaxmZuHEaSc/Miomyhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+=======
+  "dgSpecHash": "8+j8h2d5PdzTnyEgv2s2904ovtctdwgvZDMq7VhyOzwPQ2SSiUoLwAsglu5UjmpNJogndGBOs0r6AA8jD4OJAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+>>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
   "expectedPackageFiles": [
     "C:\\Users\\u008143\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\u008143\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

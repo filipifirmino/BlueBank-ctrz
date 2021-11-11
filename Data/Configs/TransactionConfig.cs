@@ -21,8 +21,8 @@ namespace BlueBank.Infra.Data.Configs
                 .HasColumnName("VL_VALUE");
 
             builder
-                .Property(x => x.DestinyClient)
-                .HasColumnName("NM_CLIENT");
+                .Property(x => x.DestinyClientId)
+                .HasColumnName("ID_CLIENT");
 
             builder
                 .Property(x => x.AccountId)

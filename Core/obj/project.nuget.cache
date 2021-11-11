@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "muYmJF1QZWoPYmRyP24G78+igTVhY2mtfgUMxFc6xfrLIKBvDAoxv+iF8biFO1GBjHF/hg0gpuNY47p7sZFCRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\Core.csproj",
+=======
+  "dgSpecHash": "xSriTClWFH5yLnS6RBYtf51LaeZQp7dZhIkAPF9rbzKxtO3WITMTTzOH0Q0rYjYCjkin9hp3S4teyD82sObF5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj",
+>>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
   "expectedPackageFiles": [],
   "logs": []
 }
