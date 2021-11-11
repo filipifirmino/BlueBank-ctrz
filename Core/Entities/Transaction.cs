@@ -15,6 +15,24 @@ namespace BlueBank.Domain.Core
         {
             throw new NotImplementedException();
         }
+
+        public Transaction()
+        {
+
+        }
+
+        public Transaction(Guid accountId, Double value)
+        {
+            AccountId = accountId;
+            Value = value;
+        }
+
+        public Transaction(Guid accountId, Double value, Guid destinyClientId)
+        {
+            AccountId = accountId;
+            Value = value;
+            DestinyClientId = destinyClientId;
+        }
        
     }
 

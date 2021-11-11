@@ -19,21 +19,21 @@ namespace BlueBankAPI.Controllers
         }
 
         //Saque
-        [HttpPost("{accountId},{Value}")]
+        [HttpPost("{accountId},{value}")]
         public IActionResult Withdraw([FromRoute] Guid accoutId, Double value)
         {
             return Ok("Sucess");
         }
 
         //Transferencia
-        [HttpPost("{accountId},{value},{accountDetinyId}")]
-        public IActionResult Withdraw([FromRoute] Guid accoutId, Guid accountDetinyId, double value )
+        [HttpPost("{accountId},{value},{accountDestinyId}")]
+        public IActionResult Transfer([FromRoute] Guid accoutId, Guid accountDestinyId, double value )
         {
             return Ok("Sucess");
         }
 
         //Saldo
-        [HttpGet("{AccountId}")]
+        [HttpGet("{accountId}")]
         public IActionResult GetBalance([FromRoute] Guid accoutId)
         {
             return Ok("Sucess");
