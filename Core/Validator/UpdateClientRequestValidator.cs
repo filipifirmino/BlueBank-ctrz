@@ -18,6 +18,5 @@ namespace BlueBank.Domain.Core.Validator
             RuleFor(x => x.Address).NotEmpty().NotNull();
         }
 
-    {
     }
 }
