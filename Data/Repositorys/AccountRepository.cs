@@ -25,7 +25,8 @@ namespace Data.Repositorys
 
         public List<Account> GetAll()
         {
-            return _bankcontext.Accounts.AsNoTracking().AsQueryable().ToList();
+            var result = _bankcontext.Accounts.AsNoTracking().AsQueryable().ToList();
+            return result;
         }
 
         public Account GetById(Guid id)

@@ -18,7 +18,9 @@ namespace BlueBank.Domain.Core.Queries.Account
 
         public List<Core.Account> GetAll()
         {
-            return _accountRepository.GetAll();
+            var result = _accountRepository.GetAll();
+            _accountRepository.Save();
+            return result;
         }
     }
 }

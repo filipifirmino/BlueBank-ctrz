@@ -1,10 +1,6 @@
 ﻿using BlueBank.Domain.Core.Interface;
 using BlueBank.Domain.Core.Requestes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BlueBank.Domain.Core.Command.History
 {
@@ -16,15 +12,11 @@ namespace BlueBank.Domain.Core.Command.History
         {
             _historyRepository = repository;
         }
-<<<<<<< HEAD
 
         public Core.Transaction Add(AddHistoryRequest request)
-=======
-        public Transaction Add(AddHistoryRequest request)
->>>>>>> main
-            // Desconstruir requeste para salvar no banco.
+
         {
-            var History = new Core.Transaction(); // Implementar variantes do contrutor
+            var History = new Core.Transaction(); 
 
             _historyRepository.Add(History);
             _historyRepository.Save();

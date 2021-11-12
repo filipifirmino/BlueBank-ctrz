@@ -23,7 +23,7 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         {
             _clientRepository = repository;
             _accountRepository = accountRepository;
-           
+
         }
 
         [HttpGet]
@@ -56,23 +56,19 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         [HttpPost]
         public IActionResult AddClient([FromBody] AddClientRequest request)
         {
-<<<<<<< HEAD
+
             try
             {
-                var Handler = new AddClientCommandHandler(_clientRepository);
+                var Handler = new AddClientCommandHandler(_clientRepository, _accountRepository);
                 var result = Handler.Add(request);
-=======
-            var Handler = new AddClientCommandHandler(_clientRepository, _accountRepository);
-            var result = Handler.Add(request);
->>>>>>> main
 
                 return Ok(result);
             }
             catch (Exception e)
             {
-               throw new InvalidOperationException("Error:", e);
+                throw new InvalidOperationException("Error:", e);
             }
-            
+
         }
 
         [HttpPut]

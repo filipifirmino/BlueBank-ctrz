@@ -1605,6 +1605,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "FluentValidation": "10.3.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
           "Shared": "1.0.0"
         },
         "compile": {
@@ -1634,7 +1635,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "FluentValidation": "10.3.4"
+          "FluentValidation": "10.3.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11"
         },
         "compile": {
           "bin/placeholder/Shared.dll": {}

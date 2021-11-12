@@ -13,13 +13,14 @@ namespace BlueBank.Domain.Core.Queries.Account
 
         public GetHistoryAccountByIdQuerieHandler(IHistoryRepository historyRepository)
         {
-           
             _historyRepository = historyRepository;
         }
 
         public List<Transaction> GetHistory(Guid id)
         {
-            return _historyRepository.GetAllByAccountId(id);
+            var result = _historyRepository.GetAllByAccountId(id);
+            _historyRepository.Save();
+            return result;
         }
     }
 }
