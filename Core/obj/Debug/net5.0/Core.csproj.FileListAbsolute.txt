@@ -29,6 +29,9 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.csproj.Co
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.pdb
+<<<<<<< HEAD
+=======
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.csproj.CopyComplete
 >>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
 >>>>>>> 73ff82e90521b85ce92a8358058ce5be3a5cc226
+>>>>>>> main

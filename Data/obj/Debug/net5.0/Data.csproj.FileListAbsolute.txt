@@ -30,7 +30,6 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.Generated
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.AssemblyInfoInputs.cache
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.AssemblyInfo.cs
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.CoreCompileInputs.cache
-C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.CopyComplete
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\ref\Data.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.pdb

@@ -123,15 +123,17 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.AssemblyInfoInputs.cache
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.AssemblyInfo.cs
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.csproj.CoreCompileInputs.cache
-C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\staticwebassets\BlueBankAPI.StaticWebAssets.Manifest.cache
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\staticwebassets\BlueBankAPI.StaticWebAssets.xml
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\scopedcss\bundle\BlueBankAPI.styles.css
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.RazorTargetAssemblyInfo.cache
-C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.csproj.CopyComplete
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\ref\BlueBankAPI.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.pdb
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.genruntimeconfig.cache
+<<<<<<< HEAD
+C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.MvcApplicationPartsAssemblyInfo.cs
+=======
 >>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
+>>>>>>> main
