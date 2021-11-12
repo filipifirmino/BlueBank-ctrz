@@ -5741,11 +5741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\obj\\",
+      "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5762,11 +5762,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj"
+            "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj"
             },
-            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj"
+            "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj"
             }
           }
         }

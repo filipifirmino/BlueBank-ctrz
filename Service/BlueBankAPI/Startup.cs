@@ -1,4 +1,7 @@
+using BlueBank.Domain.Core.Interface;
+using BlueBank.Domain.Data.Repositorys;
 using BlueBank.Domain.Data;
+using Data.Repositorys;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using BlueBank.Infra.Data.Repositorys;
 
 namespace BlueBankAPI
 {
@@ -29,6 +33,9 @@ namespace BlueBankAPI
             });
             var connection = Configuration.GetConnectionString("BankDb");
             services.AddDbContext<BankContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("BlueBankAPI")));
+            services.AddScoped<IClientRepository, ClientRepository>();
+            services.AddScoped<IHistoryRepository, HistoryRepository>();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

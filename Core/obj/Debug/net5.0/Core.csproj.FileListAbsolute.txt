@@ -12,4 +12,3 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.csproj.Co
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.pdb
-C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.csproj.CopyComplete

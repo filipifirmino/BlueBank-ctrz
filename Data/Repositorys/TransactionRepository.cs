@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BlueBank.Domain.Data.Repositorys
 {
-    class TransactionRepository : ITransactionRepository
+    public class TransactionRepository : ITransactionRepository
     {
         private readonly BankContext _bankContext;
 
@@ -21,6 +21,7 @@ namespace BlueBank.Domain.Data.Repositorys
         public Guid Deposit(Guid accountId, double value)
         {
             var deposit = new Transaction(accountId, value);
+            
             _bankContext.Transactions.Add(deposit);
             return accountId;
         }
@@ -37,6 +38,11 @@ namespace BlueBank.Domain.Data.Repositorys
             var withdraw = new Transaction(accountId, value);
             _bankContext.Transactions.Add(withdraw);
             return withdraw;
+        }
+
+        public void Save()
+        {
+            _bankContext.SaveChanges();
         }
 
     }

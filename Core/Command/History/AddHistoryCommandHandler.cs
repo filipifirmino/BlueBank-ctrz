@@ -17,10 +17,10 @@ namespace BlueBank.Domain.Core.Command.History
             _historyRepository = repository;
         }
 
-        public Transaction Add(AddHistoryRequest request)
+        public Core.Transaction Add(AddHistoryRequest request)
             // Desconstruir requeste para salvar no banco.
         {
-            var History = new Transaction(); // Implementar variantes do contrutor
+            var History = new Core.Transaction(); // Implementar variantes do contrutor
 
             _historyRepository.Add(History);
             _historyRepository.Save();

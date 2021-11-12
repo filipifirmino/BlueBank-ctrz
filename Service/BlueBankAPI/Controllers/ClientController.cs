@@ -52,10 +52,18 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         [HttpPost]
         public IActionResult AddClient([FromBody] AddClientRequest request)
         {
-            var Handler = new AddClientCommandHandler(_clientRepository);
-            var result = Handler.Add(request);
+            try
+            {
+                var Handler = new AddClientCommandHandler(_clientRepository);
+                var result = Handler.Add(request);
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+               throw new InvalidOperationException("Error:", e);
+            }
+            
         }
 
         [HttpPut]

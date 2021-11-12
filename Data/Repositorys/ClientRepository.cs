@@ -36,7 +36,7 @@ namespace Data.Repositorys
 
         public void Remove(Client client)
         {
-            _bankContext.Remove(client);
+            _bankContext.Clients.Remove(client);
         }
 
         public void Save()

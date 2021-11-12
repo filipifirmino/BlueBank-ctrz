@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlueBank.Infra.Data.Repositorys
 {
-    class HistoryRepository : IHistoryRepository
+    public class HistoryRepository : IHistoryRepository
     {
         private readonly BankContext _bankContext;
 
