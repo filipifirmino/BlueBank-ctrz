@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "/5JZnz83hMV1YdYXyPfZ4pVIdKCgwp5wg6tjyYSzWKzV4g1eU9Ke2IWf0KoOa8PeAjSEh5jWWPSG1IL+l1EZLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\Data.csproj",
-=======
-  "dgSpecHash": "Z97fbg/xAAuMBqd6/vfKyJqEpYDHpXFnH44arN1ebLPESGTKUonr59ZNw536OjLOmBNRILIPDn5HjMGbyoqF3w==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj",
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
   "expectedPackageFiles": [
     "C:\\Users\\u008143\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\u008143\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -105,5 +99,12 @@
     "C:\\Users\\u008143\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\u008143\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

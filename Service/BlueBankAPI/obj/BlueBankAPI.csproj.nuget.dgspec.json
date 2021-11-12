@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\obj\\",
-=======
-    "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\obj\\",
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,13 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\Shared.csproj": {
                 "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\Shared.csproj"
-=======
-              "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj"
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
               }
             }
           }
@@ -77,11 +58,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -90,16 +70,6 @@
         "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\obj\\",
-=======
-    "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj",
-        "projectName": "Data",
-        "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\obj\\",
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,19 +86,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\Core.csproj": {
                 "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\Core.csproj"
               },
               "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\Shared.csproj": {
                 "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\Shared.csproj"
-=======
-              "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj"
-              },
-              "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj"
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
               }
             }
           }
@@ -163,11 +125,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -176,16 +137,6 @@
         "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
         "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
-=======
-    "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
-        "projectName": "BlueBankAPI",
-        "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
-        "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -202,19 +153,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\Core.csproj": {
                 "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Core\\Core.csproj"
               },
               "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\Data.csproj": {
                 "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Data\\Data.csproj"
-=======
-              "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj"
-              },
-              "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj"
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
               }
             }
           }
@@ -262,11 +205,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -275,16 +217,6 @@
         "projectPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\u008143\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\u008143\\Desktop\\BlueBank-ctrz\\BlueBank-ctrz\\Shared\\obj\\",
-=======
-    "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
-        "projectName": "Shared",
-        "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\obj\\",
->>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\u008143\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -327,7 +259,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
