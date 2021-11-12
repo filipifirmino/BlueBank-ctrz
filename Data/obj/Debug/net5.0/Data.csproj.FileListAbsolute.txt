@@ -17,3 +17,4 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.pdb
 C:\Users\u007858\source\repos\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.runtimeconfig.json
 C:\Users\u007858\source\repos\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.runtimeconfig.dev.json
 C:\Users\u007858\source\repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.genruntimeconfig.cache
+C:\Users\u007858\source\repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.CopyComplete

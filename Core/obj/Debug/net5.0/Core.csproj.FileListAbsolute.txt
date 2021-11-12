@@ -15,4 +15,3 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.pdb
 C:\Users\u007858\source\repos\BlueBank-ctrz\Core\bin\Debug\net5.0\Core.runtimeconfig.json
 C:\Users\u007858\source\repos\BlueBank-ctrz\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
 C:\Users\u007858\source\repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
-C:\Users\u007858\source\repos\BlueBank-ctrz\Core\obj\Debug\net5.0\Core.csproj.CopyComplete

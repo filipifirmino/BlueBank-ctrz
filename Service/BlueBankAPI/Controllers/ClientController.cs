@@ -45,10 +45,11 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteClient([FromRoute] Guid id)
+        [Route("{Id}")]
+        public IActionResult DeleteClient([FromRoute] Guid Id)
         {
             var Handler = new DeletClientCommandHandler(_clientRepository, _accountRepository);
-            Handler.Delete(id);
+            Handler.Delete(Id);
 
             return Ok();
         }

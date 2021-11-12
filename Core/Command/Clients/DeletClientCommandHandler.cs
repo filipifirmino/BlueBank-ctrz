@@ -22,8 +22,11 @@ namespace BlueBank.Domain.Core.Command.Client
         public void Delete(Guid id)
         {
             var cliente = _clientRepository.GetById(id);
+            var account = _accountRepository.GetById(cliente.AccountId);
             _clientRepository.Remove(cliente);
-            _accountRepository.Remove(cliente.Account);
+            _accountRepository.Remove(account);
+            _accountRepository.Save();
+            _clientRepository.Save();
         }
     }
 }
