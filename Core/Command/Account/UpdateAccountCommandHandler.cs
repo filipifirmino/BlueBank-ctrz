@@ -1,10 +1,19 @@
 ﻿using BlueBank.Domain.Core;
+using BlueBank.Domain.Core.Interface;
 using System;
 
 namespace BlueBank.Domain.Shared.Requests.Conta
 {
-    public class AddAccountCommand
+    public class UpdateAccountCommandHandler
     {
+        private readonly IAccountRepository _accountrepository;
+
+        public UpdateAccountCommandHandler(IAccountRepository repository)
+        {
+            _accountrepository = repository;
+
+        }
+
         public void Deposit(Client client, double depositValue)
         {
             var transaction = new Transaction();

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5NIVPFDfKCkYP7Azc7usaWMoB/fyrsIVaYSp5twt2sQqAwOCZodgkvmsSwVyeSDpisBokuZ3N6DNmIeYPXB/0Q==",
+  "dgSpecHash": "T3a9MhRIxZJ1d0/l75p0FEC4ViJlDcwC5rdwAgYsQTBBmEtUt6XBVcXYiN3OSrB5sJJ0mnI0GnPwM5RjBjTTGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\u007858\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
     "C:\\Users\\u007858\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\u007858\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\u007858\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

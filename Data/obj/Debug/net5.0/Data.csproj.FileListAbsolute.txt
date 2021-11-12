@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.deps.json
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.dll
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\ref\Data.dll
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.pdb
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Core.dll
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Shared.dll
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Core.pdb
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\bin\Debug\net5.0\Shared.pdb
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.AssemblyReference.cache
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.AssemblyInfoInputs.cache
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.AssemblyInfo.cs
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.CopyComplete
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.dll
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\ref\Data.dll
+C:\Users\u008143\Desktop\BlueBank-ctrz\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.pdb
+=======
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.deps.json
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\bin\Debug\net5.0\Data.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\bin\Debug\net5.0\ref\Data.dll
@@ -14,3 +33,4 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.csproj.Co
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\ref\Data.dll
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Data\obj\Debug\net5.0\Data.pdb
+>>>>>>> 9500c58fb32caeaea2fc5736a18b0109b200f5b6

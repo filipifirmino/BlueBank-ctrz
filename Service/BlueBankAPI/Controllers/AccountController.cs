@@ -1,53 +1,44 @@
 using BlueBank.Domain.Core;
+using BlueBank.Domain.Core.Interface;
+using BlueBank.Domain.Core.Queries.Account;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 
 namespace BlueBank.Domain.BlueBankAPI.Controllers
 {
-    //[ApiController]
-    //[Route("[controller]")]
-    //public class ClientController : ControllerBase
-    //{
-    //    [HttpGet]
-    //    public IActionResult GetAll()
-    //    {
-    //        // metodo para acessar o BD e obter a lista de clientes
-    //        return Ok(new List<Client>{ }); //formatar caso não esteja;          
-    //    }
+    [ApiController]
+    [Route("[controller]")]
+    public class AccountController : ControllerBase
+    {
+        private readonly IAccountRepository _accountRepository;
+        private readonly IHistoryRepository _historyRepository;
 
-    //    [HttpGet("{Id}")]
-    //    public IActionResult GetClient([FromRoute] Guid id)
-    //    {
-    //        // metodo para acessar o BD e obter a lista de clientes
-    //        return Ok(new Client); //formatar caso não esteja;          
-    //    }
+        public AccountController(IAccountRepository accountRepository, IHistoryRepository historyRepository)
+        {
+            _accountRepository = accountRepository;
+            _historyRepository = historyRepository;
+        }
 
-    //    [HttpDelete("{Id}")]
-    //    public IActionResult DeleteClient([FromRoute] Guid id)
-    //    {
-    //        // metodo para acessar o BD e deletar um cliente
-    //        //Não retorna informação
-    //        return Ok(); // caso de sucesso
-    //                     // return BadRequest(); caso de erro
-    //    }
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var handler = new GetAllAccountQuerieHandler(_accountRepository);
+            return Ok(handler.GetAll());         
+        }
 
-    //    [HttpPost]
-    //    public IActionResult AddClient([FromBody] Client client)
-    //    {
-    //        // metodo para acessar o BD e adicionar um cliente
-    //        //Não retorna nada
-    //        return Ok(); // caso de sucesso
-    //                     // return BadRequest(); caso de erro
-    //    }
+        [HttpGet("{Id}")]
+        public IActionResult GetAccount([FromRoute] Guid id)
+        {
+            var handler = new GetAccountByIdQuerieHandler(_accountRepository);
+            return Ok(handler.GetById(id));
+        }
 
-    //    [HttpPut]
-    //    public IActionResult UpdateClient([FromBody] Client client)
-    //    {
-    //        // metodo para acessar o BD e adicionar um cliente
-    //        //Não retorna nada
-    //        return Ok(); // caso de sucesso
-    //                     // return BadRequest(); caso de erro
-    //    }
-    //}
+        [HttpGet("{Id}")]
+        public IActionResult GetHistory([FromRoute] Guid id)
+        {
+            var handler = new GetHistoryAccountByIdQuerieHandler(_historyRepository);
+            return Ok(handler.GetHistory(id));
+        }
+    }
 }

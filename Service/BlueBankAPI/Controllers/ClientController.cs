@@ -16,10 +16,14 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
     public class ClientController : ControllerBase
     {
         private readonly IClientRepository _clientRepository;
+        private readonly IAccountRepository _accountRepository;
 
-        public ClientController(IClientRepository repository)
+
+        public ClientController(IClientRepository repository, IAccountRepository accountRepository)
         {
             _clientRepository = repository;
+            _accountRepository = accountRepository;
+           
         }
 
         [HttpGet]
@@ -41,10 +45,10 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteClient([FromBody] Client client)
+        public IActionResult DeleteClient([FromRoute] Guid id)
         {
-            var Handler = new DeletClientCommandHandler(_clientRepository);
-            Handler.Delete(client);
+            var Handler = new DeletClientCommandHandler(_clientRepository, _accountRepository);
+            Handler.Delete(id);
 
             return Ok();
         }
@@ -52,10 +56,15 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         [HttpPost]
         public IActionResult AddClient([FromBody] AddClientRequest request)
         {
+<<<<<<< HEAD
             try
             {
                 var Handler = new AddClientCommandHandler(_clientRepository);
                 var result = Handler.Add(request);
+=======
+            var Handler = new AddClientCommandHandler(_clientRepository, _accountRepository);
+            var result = Handler.Add(request);
+>>>>>>> main
 
                 return Ok(result);
             }

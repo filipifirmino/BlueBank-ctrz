@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "pGqvsfArvFSf+C5UX2NLwzNPOqTbcCrfn9jzTCcxFMzsGH5jW87d8729aMFIxziVApK4fDkXINHmuv3vAyEncg==",
+  "dgSpecHash": "mVVApPtktt8XPBsGiW+gx7NXPjIkylkF0EUO5e5qZyvIpU1zFlD5thn8xdXZKmkf5jrkcRO+YyeNC1yCNrrUmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\u007858\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
