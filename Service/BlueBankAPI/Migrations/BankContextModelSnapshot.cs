@@ -116,6 +116,10 @@ namespace BlueBankAPI.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("ID_CLIENT");
 
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("TP_TYPE");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2")
                         .HasColumnName("DT_UPDATED");

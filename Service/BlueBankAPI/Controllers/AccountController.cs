@@ -28,19 +28,20 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         }
 
         [HttpGet]
-        [Route("/account/{Id}")]
-        public IActionResult GetAccount([FromRoute] Guid id)
+        [Route("{Id}")]
+        public IActionResult GetAccount([FromRoute] Guid Id)
         {
             var handler = new GetAccountByIdQuerieHandler(_accountRepository);
-            return Ok(handler.GetById(id));
+            var result = handler.GetById(Id);
+            return Ok(result);
         }
 
         [HttpGet]
-        [Route("/history/{Id}")]
-        public IActionResult GetHistory([FromRoute] Guid id)
+        [Route("history/{Id}")]
+        public IActionResult GetHistory([FromRoute] Guid Id)
         {
             var handler = new GetHistoryAccountByIdQuerieHandler(_historyRepository);
-            var result = handler.GetHistory(id);
+            var result = handler.GetHistory(Id);
 
             return Ok(result);
         }

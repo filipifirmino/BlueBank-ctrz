@@ -19,7 +19,6 @@ namespace BlueBank.Domain.Core.Queries.Account
         public Core.Account GetById(Guid id)
         {
             var result = _accountRepository.GetById(id);
-            _accountRepository.Save();
             return result;
         }
 

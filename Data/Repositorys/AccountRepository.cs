@@ -29,9 +29,9 @@ namespace Data.Repositorys
             return result;
         }
 
-        public Account GetById(Guid id)
+        public Account GetById(Guid Id)
         {
-            return _bankcontext.Accounts.AsNoTracking().Single(a => a.Id == id);
+            return _bankcontext.Accounts.AsNoTracking().Single(a => a.Id == Id);
         }
 
         public void Remove(Account account)

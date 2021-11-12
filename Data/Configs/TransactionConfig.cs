@@ -27,6 +27,10 @@ namespace BlueBank.Infra.Data.Configs
             builder
                 .Property(x => x.AccountId)
                 .HasColumnName("ID_ACCOUNT");
+
+            builder
+                .Property(x => x.Type)
+                .HasColumnName("TP_TYPE");
         }
     }
 }

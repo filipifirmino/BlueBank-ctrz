@@ -36,10 +36,10 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         }
 
         [HttpGet("{Id}")]
-        public IActionResult GetClient([FromRoute] Guid id)
+        public IActionResult GetClient([FromRoute] Guid Id)
         {
             var Handler = new GetByIdClientQueryHandler(_clientRepository);
-            var result = Handler.GetClientById(id);
+            var result = Handler.GetClientById(Id);
 
             return Ok(result);
         }

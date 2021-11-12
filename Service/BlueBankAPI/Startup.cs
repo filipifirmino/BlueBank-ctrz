@@ -33,6 +33,7 @@ namespace BlueBankAPI
             });
             var connection = Configuration.GetConnectionString("BankDb");
             services.AddDbContext<BankContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("BlueBankAPI")));
+            services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IHistoryRepository, HistoryRepository>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();

@@ -18,8 +18,7 @@ namespace BlueBank.Domain.Core.Queries.Account
 
         public List<Transaction> GetHistory(Guid id)
         {
-            var result = _historyRepository.GetAllByAccountId(id);
-            _historyRepository.Save();
+            var result = _historyRepository.GetAllByAccountId(id).ToList();
             return result;
         }
     }

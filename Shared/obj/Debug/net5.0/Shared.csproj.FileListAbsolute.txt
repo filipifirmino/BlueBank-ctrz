@@ -12,3 +12,4 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Shared\obj\Debug\net5.0\Shared.pdb
 C:\Users\u007858\source\repos\BlueBank-ctrz\Shared\bin\Debug\net5.0\Shared.runtimeconfig.json
 C:\Users\u007858\source\repos\BlueBank-ctrz\Shared\bin\Debug\net5.0\Shared.runtimeconfig.dev.json
 C:\Users\u007858\source\repos\BlueBank-ctrz\Shared\obj\Debug\net5.0\Shared.genruntimeconfig.cache
+C:\Users\u007858\source\repos\BlueBank-ctrz\Shared\obj\Debug\net5.0\Shared.csproj.AssemblyReference.cache

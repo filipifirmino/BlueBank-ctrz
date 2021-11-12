@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlueBankAPI.Migrations
 {
     [DbContext(typeof(BankContext))]
-    [Migration("20211111140404_Init")]
+    [Migration("20211112181333_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,6 +117,10 @@ namespace BlueBankAPI.Migrations
                     b.Property<Guid>("DestinyClientId")
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("ID_CLIENT");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("TP_TYPE");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2")

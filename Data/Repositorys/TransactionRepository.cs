@@ -20,7 +20,7 @@ namespace BlueBank.Domain.Data.Repositorys
 
         public Guid Deposit(Guid accountId, double value)
         {
-            var deposit = new Transaction(accountId, value);
+            var deposit = new Transaction(accountId, value, "Deposit");
             
             _bankContext.Transactions.Add(deposit);
             return accountId;
@@ -28,14 +28,14 @@ namespace BlueBank.Domain.Data.Repositorys
 
         public Transaction Transfer(Guid accountId, double value, Guid destidestinyClientId )
         {
-            var transfer = new Transaction(accountId, value, destidestinyClientId);
+            var transfer = new Transaction(accountId, value, destidestinyClientId,"Transfer");
             _bankContext.Transactions.Add(transfer);
             return transfer;
         }
 
         public Transaction Withdraw(Guid accountId, double value)
         {
-            var withdraw = new Transaction(accountId, value);
+            var withdraw = new Transaction(accountId, value, "Withdraw");
             _bankContext.Transactions.Add(withdraw);
             return withdraw;
         }

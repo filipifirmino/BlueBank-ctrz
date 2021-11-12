@@ -10,6 +10,7 @@ namespace BlueBank.Domain.Core
         public double Value { get; private set; }
         public Guid DestinyClientId { get; set; }
         public Guid AccountId { get; set; }
+        public string Type { get; set; }
 
         public List<Transaction> ToList()
         {
@@ -21,17 +22,19 @@ namespace BlueBank.Domain.Core
 
         }
 
-        public Transaction(Guid accountId, Double value) : base()
+        public Transaction(Guid accountId, Double value, string type) : base()
         {
             AccountId = accountId;
             Value = value;
+            Type = type;
         }
 
-        public Transaction(Guid accountId, Double value, Guid destinyClientId) : base()
+        public Transaction(Guid accountId, Double value, Guid destinyClientId, string type) : base()
         {
             AccountId = accountId;
             Value = value;
             DestinyClientId = destinyClientId;
+            Type = type;
         }
        
     }

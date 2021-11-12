@@ -56,6 +56,7 @@ namespace BlueBankAPI.Migrations
                     VL_VALUE = table.Column<double>(type: "float", nullable: false),
                     ID_CLIENT = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ID_ACCOUNT = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TP_TYPE = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DT_CREATED = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DT_UPDATED = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

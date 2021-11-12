@@ -25,7 +25,8 @@ namespace BlueBank.Infra.Data.Repositorys
 
         public List<Transaction> GetAllByAccountId(Guid Id)
         {
-            return _bankContext.Transactions.AsNoTracking().Single(x => x.Id == Id).ToList();
+            var result = _bankContext.Transactions.AsNoTracking().Where(x => x.AccountId == Id).ToList();
+            return result;
         }
 
         public void Save()
