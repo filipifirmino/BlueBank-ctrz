@@ -19,6 +19,14 @@ namespace BlueBank.Domain.Core
         {
 
         }
+        public Client(String name, String phone, Address address, string cpf, Guid id): base()
+        {
+            Name = name;
+            Phone = phone;
+            Address = address;
+            Cpf = cpf;
+            Id = id;
+        }
 
         public string Name { get; set; }
         public string Phone { get; set; }

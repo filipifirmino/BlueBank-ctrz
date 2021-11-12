@@ -1,5 +1,5 @@
 ﻿using BlueBank.Domain.Shared.ValueObjects;
-
+using System;
 
 namespace BlueBank.Domain.Core.Requestes
 {
@@ -9,5 +9,6 @@ namespace BlueBank.Domain.Core.Requestes
         public string Phone { get; set; }
         public Address Address { get; set; }
         public string Cpf { get; set; }
+        public Guid Id { get; set; }
     }
 }

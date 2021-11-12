@@ -47,8 +47,9 @@ namespace Data.Repositorys
         public Client Update(Client client)
         {
             client.UpdatedAt =  DateTime.Now;
+            var id = client.Id;
 
-            _bankContext.Update(client);
+            _bankContext.Clients.Update(client);
             
             return client;
         }

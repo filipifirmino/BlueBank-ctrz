@@ -15,9 +15,10 @@ namespace BlueBank.Domain.Core.Command.Client
 
         public Core.Client Update(UpdateClientRequest request)
         {
-            var client = new Core.Client(request.Name, request.Phone, request.Address, request.Cpf);
-            _clientRepository.Update(client);
-            return client;
+            var client = new Core.Client(request.Name, request.Phone, request.Address, request.Cpf, request.Id);
+            var result = _clientRepository.Update(client);
+            _clientRepository.Save();
+            return result;
         }
     }
 }

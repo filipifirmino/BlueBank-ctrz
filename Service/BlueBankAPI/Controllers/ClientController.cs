@@ -73,10 +73,10 @@ namespace BlueBank.Domain.BlueBankAPI.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateClient([FromBody] UpdateClientRequest client)
+        public IActionResult UpdateClient([FromBody] UpdateClientRequest request)
         {
             var Handler = new UpdateClientCommandHandler(_clientRepository);
-            var result = Handler.Update(client);
+            var result = Handler.Update(request);
 
             return Ok(result);
         }
