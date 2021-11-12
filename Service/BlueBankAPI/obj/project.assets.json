@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "FluentValidation/10.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1595,6 +1604,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "FluentValidation": "10.3.4",
           "Shared": "1.0.0"
         },
         "compile": {
@@ -1609,6 +1619,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Core": "1.0.0",
+          "FluentValidation": "10.3.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
           "Shared": "1.0.0"
         },
@@ -1622,6 +1633,9 @@
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FluentValidation": "10.3.4"
+        },
         "compile": {
           "bin/placeholder/Shared.dll": {}
         },
@@ -1632,6 +1646,24 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.3.4": {
+      "sha512": "hsGRtnhTlCrRbxIOkKp6rCBtkq3UV0i31ckcJtd5j1i99zqLgbQGcbxK0SMU63DIto94f++uIdRpoycu8ySnDQ==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.4.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -6042,6 +6074,7 @@
     "net5.0": [
       "Core >= 1.0.0",
       "Data >= 1.0.0",
+      "FluentValidation >= 10.3.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.11",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -6053,11 +6086,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+      "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
       "projectName": "BlueBankAPI",
-      "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
+      "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\BlueBankAPI.csproj",
       "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
+      "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Service\\BlueBankAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6074,11 +6107,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Core\\Core.csproj"
+            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj"
             },
-            "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Data\\Data.csproj"
+            "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Data\\Data.csproj"
             }
           }
         }
@@ -6093,6 +6126,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.3.4, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[5.0.11, )"

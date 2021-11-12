@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Core\\Queries\\Clients",
+    "\\Data\\Repositorys",
+    "\\Service",
+    "\\Service\\BlueBankAPI",
+    "\\Service\\BlueBankAPI\\Controllers"
+  ],
+  "SelectedNode": "\\BlueBank.sln",
+  "PreviewInSolutionExplorer": false
+}

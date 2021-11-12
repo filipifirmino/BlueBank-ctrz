@@ -11,15 +11,19 @@ namespace BlueBank.Domain.Core.Command.Client
     public class DeletClientCommandHandler
     {
         private readonly IClientRepository _clientRepository;
+        private readonly IAccountRepository _accountRepository;
 
-        public DeletClientCommandHandler(IClientRepository repository)
+        public DeletClientCommandHandler(IClientRepository repository, IAccountRepository accountRepository)
         {
             _clientRepository = repository;
+            _accountRepository = accountRepository;
         }
 
-        public void Delete(Core.Client client)
+        public void Delete(Guid id)
         {
-            _clientRepository.Remove(client);
+            var cliente = _clientRepository.GetById(id);
+            _clientRepository.Remove(cliente);
+            _accountRepository.Remove(cliente.Account);
         }
     }
 }

@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\Shared.csproj" />
+    <Compile Remove="Command\Account\**" />
+    <EmbeddedResource Remove="Command\Account\**" />
+    <None Remove="Command\Account\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Queries\Account\" />
+    <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
 </Project>

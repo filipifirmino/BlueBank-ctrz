@@ -1,11 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "FluentValidation/10.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FluentValidation/10.3.4": {
+      "sha512": "hsGRtnhTlCrRbxIOkKp6rCBtkq3UV0i31ckcJtd5j1i99zqLgbQGcbxK0SMU63DIto94f++uIdRpoycu8ySnDQ==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.4.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "FluentValidation >= 10.3.4"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\u007858\\.nuget\\packages\\": {}
@@ -13,11 +44,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\u007858\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\u007858\\Source\\Repos\\BlueBank-ctrz\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\u007858\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +76,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.3.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
