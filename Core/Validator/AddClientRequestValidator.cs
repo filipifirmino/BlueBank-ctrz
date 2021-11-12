@@ -10,7 +10,7 @@ namespace BlueBank.Domain.Core.Validator
             RuleFor(x => x.Name).NotEmpty().NotNull();
             RuleFor(x => x.Phone).NotEmpty().NotNull();
             RuleFor(x => x.Cpf).NotEmpty().NotNull();
-            RuleFor(x => x.TypeAccount).NotEmpty().NotNull();
+            RuleFor(x => x.TypeAccount).NotNull();
         }
     }
 }

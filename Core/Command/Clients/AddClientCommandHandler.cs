@@ -1,6 +1,9 @@
 ﻿using BlueBank.Domain.Core;
 using BlueBank.Domain.Core.Interface;
 using BlueBank.Domain.Core.Requestes;
+using BlueBank.Domain.Core.Responses;
+using BlueBank.Domain.Core.Validator;
+using System.Linq;
 
 namespace BlueBank.Domain.Shared.Requests
 {
@@ -15,8 +18,17 @@ namespace BlueBank.Domain.Shared.Requests
             _accountRepository = accountRepository;
         }
 
-        public Client Add( AddClientRequest requeste)
+        public Client Add(AddClientRequest requeste)
         {
+            var validator = new AddClientRequestValidator();
+            var error = validator.Validate(requeste).Errors;
+
+            if (error.Any())
+            {
+                throw new System.Exception();
+            }
+
+
             var Client = new Client(requeste.Name, requeste.Phone, requeste.Address, requeste.Cpf);
             var Account = new Account(requeste.TypeAccount, Client);
             Client.Account = Account;
@@ -26,7 +38,7 @@ namespace BlueBank.Domain.Shared.Requests
             _accountRepository.Add(Account);
             _clientRepository.Save();
             _accountRepository.Save();
-            
+
             return Client;
         }
     }
