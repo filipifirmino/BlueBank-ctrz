@@ -24,21 +24,42 @@ Clonar o repositório
 
 
 ### Rotas de Client
-// colocar as rotas
-##### Metodos de Client
-Criar client:
-AddClient(Client client)
-tal tal tal pi pi pi po po po
+Cadastrar cliente:
+``[POST] /Client``
+
+Listar todos os clientes:
+``[GET] /Client``
+
+Listar cliente por id:
+``[GET] /Client/{Id}``
+
+Atualizar cliente:
+``[PUT] /Client``
+
+Delete Cliente:
+``[DELET] /Client/{id}``
+
 
 ### Rotas de Account
-// colocar as rotas
+Listar todas as contas:
+``[GET] /All``
 
+Listar conta por id:
+``[GET] /Account/{Id}``
 
-##### Metodos de Account
-Ex: saque(conta, valor)
-Método de saque requer dois parametros, conta e valor.
+Listar hitorico de movimentações da conta por id:
+``[GET] /Client/history/{Id}``
 
-//// falta fazer de todos
+##### Transação de conta
+Deposito:
+``[GET] /api/Transactions/deposit/{AccountId}/{Value}``
+
+Saque:
+``[GET] /api/Transactions/withdraw/{AccountId}/{Value}``
+
+Transferencia:
+``[GET] /api/Transactions/transfer/{AccountId}/{Value}/{AccountDestinyId}``
+
 
 ## Desenvolvedores
 
@@ -53,11 +74,13 @@ Método de saque requer dois parametros, conta e valor.
 * C# .Net
 * SQL Server
 * Swagger
+* Docker
 
 ## Modelagem do Projeto
 
 DDD - Domain Driven Design
-// descrever o uso (se quiser)
+CQRS - Command and Query Responsibility Segregation
+Repository patners 
 
 ## Screenshots
 

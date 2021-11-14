@@ -10,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using BlueBank.Infra.Data.Repositorys;
+using FluentValidation.AspNetCore;
+using BlueBank.Domain.Core.Validator;
+using BlueBank.Domain.Core.Requestes;
 
 namespace BlueBankAPI
 {
@@ -26,7 +29,12 @@ namespace BlueBankAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddClientRequestValidator>())
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<UpdateClientRequestValidator>())
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<DepositTransactionValidator>())
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<TransferTransactionValidator>())
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<WithdrawTransactionValidator>());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BlueBankAPI", Version = "v1" });

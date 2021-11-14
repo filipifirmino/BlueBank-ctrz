@@ -66,3 +66,5 @@ C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0
 C:\Users\u007858\Source\Repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\u007858\source\repos\BlueBank-ctrz\Service\BlueBankAPI\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\u007858\source\repos\BlueBank-ctrz\Service\BlueBankAPI\obj\Debug\net5.0\BlueBankAPI.csproj.CopyComplete
+C:\Users\u007858\source\repos\BlueBank-ctrz\Service\BlueBankAPI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\u007858\source\repos\BlueBank-ctrz\Service\BlueBankAPI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

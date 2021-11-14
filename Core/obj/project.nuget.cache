@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "G14SH2sKxYiSQCdsHyTJ9DzLcm6PVvib42siOgfrXULWB5KKt779Jq3kDOIVG2A7+hIGyTeoq0VQ8KCAoRe7rQ==",
+  "dgSpecHash": "Cqk+MkXni8peF/WJHYV6BAgNt2RI7bC41t89IfMxRwmY74lzwxLTOqKZ4TZLDXj7Z0MMalPFj9U/gGbaDJ07sg==",
   "success": true,
   "projectFilePath": "C:\\Users\\u007858\\source\\repos\\BlueBank-ctrz\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\u007858\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
+    "C:\\Users\\u007858\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.4\\fluentvalidation.aspnetcore.10.3.4.nupkg.sha512",
+    "C:\\Users\\u007858\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.4\\fluentvalidation.dependencyinjectionextensions.10.3.4.nupkg.sha512",
     "C:\\Users\\u007858\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\u007858\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\u007858\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

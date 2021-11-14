@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[10.3.4, )"
             },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.4, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -115,6 +119,10 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.4, )"
+            },
+            "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[10.3.4, )"
             },

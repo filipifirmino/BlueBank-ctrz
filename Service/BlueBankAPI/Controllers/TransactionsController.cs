@@ -27,6 +27,7 @@ namespace BlueBankAPI.Controllers
         [Route("deposit/{AccountId}/{Value}")]
         public IActionResult Deposit([FromRoute] AddTransctionDeposit request )
         {
+
             var Handler = new DepositCommandHandler(_repository, _accountRepository);
             var result = Handler.Deposit(request);
             return Ok(result);
