@@ -1,5 +1,6 @@
 ﻿using BlueBank.Domain.Core.Interface;
 using BlueBank.Domain.Core.Requestes;
+using BlueBank.Domain.Shared.Entitie.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,10 @@ namespace BlueBank.Domain.Core.Command.Transaction
             if(request.Value < account.Balance)
             {
                 account.Balance -= request.Value;
+            }
+            else
+            {
+               throw new DomainException($"Saldo insuficiente {account.Balance}");
             }
             _accountRepository.Update(account);
             _accountRepository.Save();

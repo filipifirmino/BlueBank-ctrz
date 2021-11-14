@@ -1,5 +1,6 @@
 ﻿
 using BlueBank.Domain.Core.Interface;
+using BlueBank.Domain.Shared.Entitie.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,10 +24,19 @@ namespace BlueBank.Domain.Core.Command.Client
         {
             var cliente = _clientRepository.GetById(id);
             var account = _accountRepository.GetById(cliente.AccountId);
-            _clientRepository.Remove(cliente);
-            _accountRepository.Remove(account);
-            _accountRepository.Save();
-            _clientRepository.Save();
+            
+                if (account.Balance == 0)
+                {
+                    _clientRepository.Remove(cliente);
+                    _accountRepository.Remove(account);
+                    _accountRepository.Save();
+                    _clientRepository.Save();
+                }
+                else
+                {
+                    throw new DomainException("Saldo da conta diferente de 0");
+                }     
+
         }
     }
 }
