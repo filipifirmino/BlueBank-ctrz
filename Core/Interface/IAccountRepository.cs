@@ -16,6 +16,8 @@ namespace BlueBank.Domain.Core.Interface
 
         public void Remove(Account account);
 
+        public Account Update(Account account);
+
         public void Save();
     }
 }

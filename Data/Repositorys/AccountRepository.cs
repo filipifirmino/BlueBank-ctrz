@@ -43,5 +43,15 @@ namespace Data.Repositorys
         {
             _bankcontext.SaveChanges();
         }
+
+        public Account Update(Account account)
+        {
+            account.UpdatedAt = DateTime.Now;
+            // var id = account.Id;
+
+            _bankcontext.Accounts.Update(account);
+
+            return account;
+        }
     }
 }
